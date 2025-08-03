@@ -1,0 +1,166 @@
+body {
+    font-family: ('https://fonts.googleapis.com/css?family=Roboto:400,700');
+    background-image: url('/assets/img/background.png');
+    background-repeat: repeat-y; /* repete a imagem */
+    background-position: center; /* centraliza a imagem */
+    background-size: contain; /* ou 'cover' dependendo do efeito desejado */
+    top: 0;
+    right: 0;
+    width: 120em; /* ajuste conforme o tamanho desejado */
+    height: 115em; /* ajuste conforme o tamanho desejado */
+    z-index: -1; /* coloca a imagem atrás do conteúdo */
+    pointer-events:all; /* permite clicar nos elementos por baixo */
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+h1.text-center {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 3em;
+  color: #2d2d2f;
+  background: linear-gradient(90deg, #d6dde7, #c2f8ef); 
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 2em;
+  padding: 0.5em;
+  border-bottom: 2px solid #aeafb4;
+  border-radius: 55px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1.text-center:hover {
+  transform: scale(1.03);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#pokemonContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+#btnTop {
+    display: none; /* Oculto ao início */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background: none;          /* Sem fundo */
+    border: none;              /* Sem borda */
+    font-size: 36px;           /* Tamanho da seta */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #btnTop:hover {
+    transform: scale(1.4);     /* Zoom ao passar o mouse */
+  }
+
+  /* ====== FOOTER ====== */
+footer {
+  background: linear-gradient(90deg, #3e3f42, #2c2d2f);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 1.5em 0;
+  border-top: 2px solid #555;
+  margin-top: 4em;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+  margin: 0.2em 0;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* ====== MODAL (CARTÃO DE DETALHES) ====== */
+.modal-content {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dee2e6;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 auto;
+}
+
+.modal-body {
+  padding-top: 0.5em;
+  font-size: 1rem;
+  color: #444;
+}
+
+.modal-body p {
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+.modal-body span {
+  font-weight: 500;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}

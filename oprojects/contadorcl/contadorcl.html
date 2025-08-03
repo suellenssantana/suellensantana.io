@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Dias Fora do Chile</title>
+  <link rel="stylesheet" href="./contadorcl.css" />
+
+
+</head>
+<body>
+
+
+  <div class="lang-selector">
+    <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="setLanguage('pt')">
+    <img src="https://flagcdn.com/w40/us.png" alt="English" onclick="setLanguage('en')">
+    <img src="https://flagcdn.com/w40/cl.png" alt="Español" onclick="setLanguage('es')">
+  </div>
+
+  <h1 id="title">Calculadora de Dias Fora do Chile</h1>
+
+  <div id="entries-container"></div>
+  <button onclick="addEntry()" id="add-button">Adicionar Entrada/Saída</button>
+  <button onclick="calcularDias()" id="calc-button">Calcular Dias Fora</button>
+
+  <div id="results"></div>
+
+  <footer>
+    <p>&copy; 2025 Desenvolvido por Suellen Santana. All rights reserved.</p>
+    <p>Contact: <a href="mailto:suellen@example.com">suellen@example.com</a></p>
+  </footer>
+  
+    <script src="./contadorcl.js"></script>
+</body>
+</html>
