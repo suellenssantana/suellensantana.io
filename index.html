@@ -8,7 +8,7 @@
 </head>
 <body>
   <nav class="navbar" aria-label="Menu principal">
-    <a href="index.html" class="logo" aria-label="Início">S.</a>
+    <a href="./index.html" class="logo-index" aria-label="Início"><img src="/src/img/lighthome.png" alt="Home"></a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="navMenu" aria-expanded="false">
       <span class="hamburger"></span>
     </button>
@@ -28,17 +28,26 @@
 
   <main class="home-content">
     <section>
-      <h1>Bem-vinda(o) ao meu universo de tecnologia! 👋</h1>
-      <p>Explore meus projetos, conheça minha trajetória, e descubra como posso colaborar com seu time ou projeto.</p>
+      <h1> <!-- Bem-vinda(o) ao meu universo de tecnologia! 👋</h1>
+      <p>Explore meus projetos, conheça minha trajetória, e descubra como posso colaborar com seu time ou projeto-->.</p>
     </section>
     <!-- Outras seções da home -->
   </main>
 
-  <footer class="footer">
+  <footer class="footer" style="display:flex;flex-direction:column;align-items:center;gap:1rem;padding:1.2rem 0;">
     <div class="footer-medias">
-      <a href="https://github.com/suellenssantana" target="_blank" rel="noopener" aria-label="GitHub"><img src="src/img/github.svg" alt="GitHub"></a>
-      <a href="https://www.linkedin.com/in/suellen-s-santana/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="src/img/linkedin.svg" alt="LinkedIn"></a>
-      <a href="mailto:suellen@example.com" aria-label="E-mail"><img src="src/img/email.svg" alt="E-mail"></a>
+    <div style="display:flex;gap:2rem;">
+    <a href="https://github.com/suellenssantana" target="_blank" aria-label="GitHub" style="color:#fff;font-size:2rem;transition:.2s;">
+      <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/suellen-s-santana/" target="_blank" aria-label="LinkedIn" style="color:#fff;font-size:2rem;transition:.2s;">
+      <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg>
+    </a>
+    <a href="mailto:seu@email.com" aria-label="E-mail" style="color:#fff;font-size:2rem;transition:.2s;">
+      <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg>
+    </a>
+  </div>
+  <p style="color:#aaa;font-size:.8rem;margin-top:.8rem;">
     </div>
     <p>&copy; 2025 Suellen Santana. Todos os direitos reservados.</p>
   </footer>
