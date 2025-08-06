@@ -15,7 +15,7 @@ const projects = [
     name: "DevF",
     path: "devf/",
     children: [
-      { name: "Cajero", path: "devf/cajero/cajero.html" },
+      { name: "Cajero", path: "devf/cajero/index.html" },
       { name: "Disney", path: "devf/sitiofamoso/sitiofamoso.html" },
       { name: "Ejercicios", path: "devf/ejercicios/ejercicios.html" },
       { name: "IMDb", path: "devf/imdb/imdb.html" },
